@@ -2,15 +2,15 @@ import java.util.Calendar;
 
 class  ch09_CalendarTest01 {
 	public static void main(String[] args) {
-		// 요일은 1부터 시작하기 때문에, DAY_OF_WEEK[0]은 비운다.
+			// 요일은 1부터 시작하기 때문에, DAY_OF_WEEK[0]은 비운다.
 		final String[] DAY_OF_WEEK = {"", "일", "월", "화", "수", "목", "금", "토"};
 
 		Calendar date1 = Calendar.getInstance();
 		Calendar date2 = Calendar.getInstance();
 
 		// month의 경우 0부터 시작하기 때문에 8월인 경우, 7로 지정
-		// date1.set(2015, Calendar.AUGUST, 15);와 같이 할 수도 있다.
-		date1.set(2016, 8, 19); // 2015년 8월 15일로 날짜를 설정
+		// date1.set(2020, Calendar.AUGUST, 15);와 같이 할 수도 있다.
+		date1.set(2020, 0, 16); // 2020년 1월 16일로 날짜를 설정
 		System.out.println("date1은 "+ toString(date1) + DAY_OF_WEEK[date1.get(Calendar.DAY_OF_WEEK)]+"요일이고,");
 		System.out.println("오늘(date2)은 " + toString(date2) + DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)]+"요일입니다.");
 
