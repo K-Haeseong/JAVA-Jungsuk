@@ -2,7 +2,7 @@ import java.util.Calendar;
 
 class  ch09_CalendarTest01 {
 	public static void main(String[] args) {
-			// 요일은 1부터 시작하기 때문에, DAY_OF_WEEK[0]은 비운다.
+		// 요일은 1부터 시작하기 때문에, DAY_OF_WEEK[0]은 비운다.
 		final String[] DAY_OF_WEEK = {"", "일", "월", "화", "수", "목", "금", "토"};
 
 		Calendar date1 = Calendar.getInstance();
