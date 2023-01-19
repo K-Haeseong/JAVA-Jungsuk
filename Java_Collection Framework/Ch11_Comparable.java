@@ -14,7 +14,9 @@
 // ※ Comparable	=> lang패키지	: import 필요 X 
 //   Comparator	=> util패키지	: import 필요 O	
 
-																			// 출처 : Stranger's LAB
+																	// 출처 : Stranger's LAB
+// 생성한 객체 스스로 가지고 있는 Comparable이 구현되어 기준을 갖게 하거나 
+// Comparator로 기준을 생성해서 넣어주어 기준을 갖게 해야한다.
 
 	public class Ch11_Comparable {
 	
