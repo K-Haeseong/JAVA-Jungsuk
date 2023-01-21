@@ -70,7 +70,7 @@ public class Ch11_HashMap03 {
 		} 
 
 		return new String(bar); 	// String(char[] chArr)
-		
+		// char[] -> String으로 바꿀때 String 생성자 사용하면 된다고 했었음
 	}
 
 }
