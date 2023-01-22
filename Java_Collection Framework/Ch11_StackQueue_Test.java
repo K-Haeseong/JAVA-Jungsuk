@@ -24,7 +24,7 @@ public class Ch11_StackQueue_Test {
 		
 		try {
 			for(int i=0; i< expression.length(); i++) {			//	범위를 ( <=)  이렇게 하면 안되나?
-				char ch = expression.charAt(i);
+				char ch = expression.charAt(i);				// 	=> 안돼. 범위 벗어난다. expression의 범위 숫자로 바꿔 넣어보자.
 
 				if(ch == '(') {
 					st.push(ch+"");				//	: 왜 ""를 붙이지?	=> 지네릭스 타입인자와 관련 <String>
