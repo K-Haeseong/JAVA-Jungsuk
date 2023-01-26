@@ -8,7 +8,7 @@ import static java.util.Collections.*;
 
 // 2. 컬렉션의 동기화 					- synchronizedXXX(); 
 
-// 3. 변경불가(readOnly) 컬렉션 만들기	- unmdifiableXXX();
+// 3. 변경불가(readOnly) 컬렉션 만들기	- unmodifiableXXX();
 
 // 4. 싱글톤 컬렉션 만들기 				- singletionXXX() / singletonSet X singleton O
 //	* 싱글톤 => 객체 1개만 저장 가능
