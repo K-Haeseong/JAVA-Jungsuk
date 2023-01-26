@@ -26,14 +26,16 @@ public class Ch11_CollectionsClass {
 
 		
 		addAll(list, 1,2,3,4,5); 
+//		Collections.addAll(list, 1,2,3,4,5); // import문 때문에 Collections 생략가능
+
 		System.out.println(list);
 		
 		
-		rotate(list, 2);  // 오른쪽으로 두 칸씩 이동 
+		rotate(list, 2);   // 오른쪽으로 두 칸씩 이동(반시계 방향으로 두번 회전)
 		System.out.println(list);
 
 		
-		swap(list, 0, 2); // 첫 번째와 세 번째를 교환(swap)
+		swap(list, 0, 2); // 첫 번째와 세 번째를 교환
 		System.out.println(list);
 
 		
@@ -45,6 +47,7 @@ public class Ch11_CollectionsClass {
 		System.out.println(list);
 		
 		
+		// binarySearch() 하기 전에 정렬 필수
 		sort(list);       // 정렬 
 		System.out.println(list);
  
@@ -66,10 +69,11 @@ public class Ch11_CollectionsClass {
 		List newList = nCopies(list.size(), 2); 
 		System.out.println("newList="+newList);
 
-		
-		System.out.println(disjoint(list, newList)); // 공통요소가 없으면 true
+		// 공통요소가 없으면 true
+		System.out.println(disjoint(list, newList)); 
 
 		
+		// newList → list에 복사
 		copy(list, newList); 
 		System.out.println("newList="+newList);
 		System.out.println("list="+list);
