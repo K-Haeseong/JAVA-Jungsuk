@@ -17,7 +17,7 @@ public class Java_Generics {
 		list.add("30");
 		
 		
-		Object o = list.get(2); // 이게 뭐야? - Object o = new Object("30"); 이거야?
+		Object o = list.get(2); // list.get(2)가 String("30")인거야? String("30")의 주소값이야?
 		System.out.println(o);
 		String s = (String)list.get(2); // 굳이 이렇게 해서 출력 하는 이유는?
 		System.out.println(s);
