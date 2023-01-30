@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Java_Iterator_HashMap {
+// Iterator <E>	: 클래스를 작성할 때, Object타입 대신 T와 같은 타입 변수를 사용
+
+public class Java_Iterator {
 
 	public static void main(String[] args) {
 		
@@ -12,9 +14,11 @@ public class Java_Iterator_HashMap {
 
 		Iterator<Student> it = list.iterator();
 		while (it.hasNext()) {
-		//  Student s = (Student)it.next(); // 지네릭스를 사용하지 않으면 형변환 필요.
+//			Student s = (Student)it.next();		// 지네릭스를 사용하지 않으면 형변환 필요.
 			Student s = it.next();
 			System.out.println(s.name);
+//			System.out.println(it.next().name);	// 위에 2개 합친 것 - 이게 코드가 더 간결
+			
 		}
 	} // main
 }
