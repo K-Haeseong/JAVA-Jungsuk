@@ -5,9 +5,20 @@ import java.util.ArrayList;
 //			: Box	=> 원시타입(raw type)
 
 
-//	제네릭 타입과 다형성	: 참조 변수와 생성자의 대입된 타입은 일치해야 한다.
-//					: 제네릭 클래스간의 다형성은 성립(대입된 타입은 일치 해야함)
-//					: 매개변수의 다형성도 성립
+//	제네릭 타입과 다형성
+//	1. 참조 변수와 생성자의 대입된 타입은 일치해야 한다.
+//	ArrayList<Tv> 		list = new ArrayList<Tv>(); // 가능
+//	ArrayList<Product> 	list = new ArrayList<Tv>(); // 에러 - 불일치
+	
+//	2. 제네릭 클래스간의 다형성은 성립(대입된 타입은 일치 해야함)
+//	List<Tv> list = new ArrayList<Tv>();	// 가능 - ArrayList가 list를 구현했기 때문에
+
+//	3. 매개변수의 다형성도 성립
+//	ArrayList<Product> 	list = new ArrayList<Product>(); // 에러 - 불일치
+//	list.add(new Product());
+//	list.add(new Tv());
+//	list.add(new Audio());
+
 
 
 class Product {}
