@@ -41,8 +41,7 @@ public class Join_Yield {
 			
 			try {
 				t1.join(); // main쓰레드가 t1의 작업이 끝날 때까지 기다린다.
-				t1.join(); // main쓰레드가 t2의 작업이 끝날 때까지 기다린다.
-				t2.join();
+				t2.join(); // main쓰레드가 t2의 작업이 끝날 때까지 기다린다.
 			} catch (InterruptedException e){}
 			
 			System.out.print("소요시간 : " + (System.currentTimeMillis() - startTime)/1000.0 + "초");
